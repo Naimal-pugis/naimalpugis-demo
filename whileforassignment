@@ -1,0 +1,518 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "f740a155-b1c0-4cb8-83ba-3bbd814dcb5e",
+   "metadata": {},
+   "source": [
+    "Write a Python program using a while loop to print all numbers from 1 to a user-provided number N."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "e085c7b8-f5af-44b1-88bf-626a4f0e8eeb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter num 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "i=1\n",
+    "num=int(input(\"enter num\"))\n",
+    "while i <= num:\n",
+    " print (i)\n",
+    " i+=1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "83ceb325-3684-481f-870d-b9b00e7d0483",
+   "metadata": {},
+   "source": [
+    "Write a Python program using a for loop to calculate the sum of the first N natural numbers."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4dfbb351-f611-49d6-a216-826bca363e49",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "N=int(input(\"enter number\"))\n",
+    "sum=0\n",
+    "for i in range(1,N+1):\n",
+    "    sum+=1\n",
+    "    print(sum)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a9f808b7-dc1f-43b5-b902-430aca5bab33",
+   "metadata": {},
+   "source": [
+    "Write a Python program using a for loop to count how many even numbers exist between two user-provided\n",
+    "integers (inclusive)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "093aa992-4bd1-4a13-9dc0-2d211eaa1a37",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter N1: 4\n",
+      "enter N2: 5\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "N1=int(input(\"enter N1:\")) \n",
+    "N2=int(input(\"enter N2:\"))\n",
+    "even_count=0\n",
+    "for i in range(N1,N2+1):\n",
+    "    if i % 2 == 0:\n",
+    "       even_count+=1 \n",
+    "    print(even_count)\n",
+    "      "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8be31cac-080c-49e1-8ed7-306b773a1bff",
+   "metadata": {},
+   "source": [
+    "Write a program that calculates the factorial of a given number using a while loop."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "9f784979-f968-4eff-91a9-1e3d7f691ba5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter N 4\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "factorial=1\n",
+    "N=int(input(\"enter N\"))\n",
+    "i=3\n",
+    "while i<=N:\n",
+    "  factorial*=i\n",
+    "  i+=1\n",
+    "print(factorial)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "92f0e771-2002-46b9-86fa-73f73cada83f",
+   "metadata": {},
+   "source": [
+    "Write a Python program that takes a number as input and checks if it is a prime number using a for-else loop."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "87957983-1030-474d-bf6e-4b01a228781a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter N 7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "N=int(input(\"enter N\"))\n",
+    "prime= 1\n",
+    "for i in range(2, int(N**0.5) + 1):\n",
+    " if N % i==0:\n",
+    "     prime=False\n",
+    "     break\n",
+    "if prime>=1:\n",
+    "      print(\"prime\")\n",
+    "else:\n",
+    "     print(\"not prime\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "990c9783-6b83-47bb-9692-b86427d84862",
+   "metadata": {},
+   "source": [
+    "Write a Python program using a while loop to print the Fibonacci series up to a user-specified limit.\n",
+    "(Example: If input is 10, output should be 0, 1, 1, 2, 3, 5, 8.)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "7c2fc698-ca75-45f6-910a-98b5ed38ea5f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=0\n",
+    "b=1\n",
+    "number=int(input(\"enter number\"))\n",
+    "while a<=number:\n",
+    "    print(a)\n",
+    "    a,b = b, a + b"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "726b877f-eae6-4d5c-90a0-a7fe68a8b24d",
+   "metadata": {},
+   "source": [
+    "Write a Python program where the computer selects a random number between 1 and 100. The user has to\n",
+    "guess the number. Use a while loop to provide feedback (\"Too high\", \"Too low\") and con�nue un�l the user\n",
+    "guesses correctly."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "317bf8da-08b5-45be-9895-07ae8b84940a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter guess:  \n"
+     ]
+    },
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: ''",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[38], line 6\u001b[0m\n\u001b[0;32m      3\u001b[0m guess \u001b[38;5;241m=\u001b[39m \u001b[38;5;28;01mNone\u001b[39;00m\n\u001b[0;32m      5\u001b[0m \u001b[38;5;28;01mwhile\u001b[39;00m guess \u001b[38;5;241m!=\u001b[39m number:\n\u001b[1;32m----> 6\u001b[0m     guess \u001b[38;5;241m=\u001b[39m \u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mEnter guess: \u001b[39m\u001b[38;5;124m\"\u001b[39m))\n\u001b[0;32m      7\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m guess \u001b[38;5;241m>\u001b[39m number:\n\u001b[0;32m      8\u001b[0m         \u001b[38;5;28mprint\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mToo high!\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n",
+      "\u001b[1;31mValueError\u001b[0m: invalid literal for int() with base 10: ''"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "number = random.randint(1, 100)\n",
+    "\n",
+    "guess = None\n",
+    "\n",
+    "while guess != number:\n",
+    "    guess = int(input(\"Enter guess: \"))\n",
+    "    if guess > number:\n",
+    "        print(\"Too high!\")\n",
+    "    elif guess < number:\n",
+    "        print(\"Too low!\")\n",
+    "        break\n",
+    "    else:\n",
+    "        print(\"Guess correctly!\")\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c5b2855-f817-4fcf-bfcd-67678550159c",
+   "metadata": {},
+   "source": [
+    "Write a Python program that takes an integer as input and finds its smallest divisor greater than 1 using a for\n",
+    "loop. Use a for-else loop to print \"Prime\" if no divisor is found."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "41f41e76-ac15-4b55-bf1a-764f8f8386ea",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter number 8\n"
+     ]
+    },
+    {
+     "ename": "NameError",
+     "evalue": "name 'none' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[44], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m num\u001b[38;5;241m=\u001b[39m\u001b[38;5;28mint\u001b[39m(\u001b[38;5;28minput\u001b[39m(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124menter number\u001b[39m\u001b[38;5;124m\"\u001b[39m))\n\u001b[1;32m----> 2\u001b[0m small_divisor\u001b[38;5;241m=\u001b[39m  none\n\u001b[0;32m      3\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m i \u001b[38;5;129;01min\u001b[39;00m \u001b[38;5;28mrange\u001b[39m(\u001b[38;5;241m2\u001b[39m,n\u001b[38;5;241m+\u001b[39m\u001b[38;5;241m1\u001b[39m):\n\u001b[0;32m      4\u001b[0m  \u001b[38;5;28;01mif\u001b[39;00m n\u001b[38;5;241m%\u001b[39mi\u001b[38;5;241m==\u001b[39m\u001b[38;5;241m0\u001b[39m:\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'none' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "num=int(input(\"enter number\"))\n",
+    "small_divisor=  none\n",
+    "for i in range(2,n+1):\n",
+    " if n%i==0:\n",
+    "     small_divisor=i\n",
+    "     break\n",
+    " if small_divisor is none:\n",
+    "  print(\"prime\")\n",
+    "else:\n",
+    "    print(small_divisor)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8cedf25e-d120-4dba-b29f-2522bc06dc77",
+   "metadata": {},
+   "source": [
+    "Write a program using nested for loops to print the mul�plica�on table for numbers from 1 to N.\n",
+    "(Example: If N = 3, output should show tables for 1, 2, and 3.)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "0ca4dc6c-257f-4eaa-b5cc-c2794141e26a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter n 6\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Multiplication table for 1:\n",
+      "Multiplication table for 2:\n",
+      "Multiplication table for 3:\n",
+      "Multiplication table for 4:\n",
+      "Multiplication table for 5:\n",
+      "Multiplication table for 6:\n",
+      "6 x 1 = 6:\n",
+      "\n",
+      "6 x 2 = 12:\n",
+      "\n",
+      "6 x 3 = 18:\n",
+      "\n",
+      "6 x 4 = 24:\n",
+      "\n",
+      "6 x 5 = 30:\n",
+      "\n",
+      "6 x 6 = 36:\n",
+      "\n",
+      "6 x 7 = 42:\n",
+      "\n",
+      "6 x 8 = 48:\n",
+      "\n",
+      "6 x 9 = 54:\n",
+      "\n",
+      "6 x 10 = 60:\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "n=int(input(\"enter n\"))\n",
+    "for i in range(1,n+1):\n",
+    "    print(f\"Multiplication table for {i}:\")\n",
+    "for j  in range(1,11):\n",
+    "    print(f\"{i} x {j} = {i * j}:\")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8e0c79fc-c79b-4543-b701-55a652b5fc16",
+   "metadata": {},
+   "source": [
+    "Write a Python program using nested loops to print a number pyramid up to a user-specified number of levels.\n",
+    "(Example for 4 levels:)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "be28e760-885d-482e-9b8c-b3d596ab2498",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter level 7\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "      1\n",
+      "     1\n",
+      "2\n",
+      "    1\n",
+      "2\n",
+      "3\n",
+      "   1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "  1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      " 1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "level=int(input(\"enter level\"))\n",
+    "for i in range(1,level+1):\n",
+    "  for j in range(level-i):\n",
+    "     print(\" \",end=\"\")\n",
+    "  for k in range(1,i+1):\n",
+    "     print(k,end=\"\")\n",
+    "     print()\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b0a74b3f-c3d6-40dc-b493-cffe251c4b8b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
